@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RUN 8000+3000" type="CompoundRunConfigurationType">
+    <toRun name="FinalProject" type="Python.FastAPI" />
+    <toRun name="start" type="js.build_tools.npm" />
+    <method v="2" />
+  </configuration>
+</component>
