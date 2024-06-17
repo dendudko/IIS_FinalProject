@@ -50,3 +50,7 @@ tbody tr:nth-child(even) {
     background-color: #003c81;
     color: white;
 }
+
+.aggregations {
+    margin-top: 5px;
+}

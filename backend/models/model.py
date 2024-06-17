@@ -18,3 +18,12 @@ def select_buildings():
     join main.country c2 on c2.country_id = c.country_id
     ''', conn)
     return df.to_dict(orient='records')
+
+
+def select_chart_data():
+    df = pd.read_sql('''
+    select year_create,
+    height
+    from building
+    ''', conn)
+    return df.to_dict(orient='records')

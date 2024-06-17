@@ -1,12 +1,12 @@
 import React from 'react';
 import Controls from "./Controls";
 
-function App() {
+const App = () => {
     return (
-        <div className="App">
+        <div>
             <Controls/>
         </div>
     );
-}
+};
 
 export default App;

@@ -21,3 +21,8 @@ app.add_middleware(
 @app.get('/buildings')
 async def get_buildings():
     return model.select_buildings()
+
+
+@app.get('/chart')
+async def get_chart_data():
+    return model.select_chart_data()
