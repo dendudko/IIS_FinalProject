@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from backend.models import model
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Dict
 
 app = FastAPI()
 
