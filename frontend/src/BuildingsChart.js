@@ -40,7 +40,7 @@ const BuildingsChart = ({aggregations = ['min', 'avg', 'max']}) => {
                     .range([0, innerWidth]);
 
                 const y = d3.scaleLinear()
-                    .domain([0, d3.max(data, d => Math.max(d.min || 0, d.max || 0, d.avg || 0))])
+                    .domain([300, d3.max(data, d => Math.max(d.min || 0, d.max || 0, d.avg || 0))])
                     .range([innerHeight, 0]);
 
                 const chartGroup = svg.append('g')
@@ -64,7 +64,7 @@ const BuildingsChart = ({aggregations = ['min', 'avg', 'max']}) => {
                     path.attr("stroke-dasharray", `${totalLength * 3} ${totalLength * 3}`)
                         .attr("stroke-dashoffset", totalLength * 3)
                         .transition()
-                        .duration(4000)
+                        .duration(6000)
                         .ease(d3.easeLinear)
                         .attr("stroke-dashoffset", 0)
                         .attr("d", lineGenerator.y(d => y(d[key])));

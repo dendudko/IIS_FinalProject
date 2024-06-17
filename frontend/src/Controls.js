@@ -25,7 +25,7 @@ const Controls = () => {
     const handleChartClick = () => {
         if (showChart) {
             setShowChart(false);
-            setAggregations(initialAggregations); // Сбросить aggregations при скрытии графика
+            setAggregations(initialAggregations);
         } else {
             setShowChart(true);
         }
